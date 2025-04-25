@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/login.css">
+  <title>To-Do List - Login</title>
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <div class="form-box" id="login-form">
+        <h2>Login</h2>
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Login</button>
+        </form>
+        <button id="toggle-register">Registrar-se</button>
+      </div>
+
+      <div class="form-box hidden" id="register-form">
+        <h2>Register</h2>
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username-register">
+            <label for="email">Email:</label>
+            <input type="email" name="email", id="email-register">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password-register">
+            <label for="password-repeat">Repita a senha:</label>
+            <input type="password" name="password-confirm" id="password-confirm">
+            <button type="submit">Registrar</button>
+        </form>
+        <button id="toggle-login">Já tem conta? Faça login</button>
+      </div>
+      <div class="error-box" style="margin-top: 10px">
+        <span id="error-message" style="color: red;"></span>
+        <span id="success-message" style="color: greenyellow;"></span>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

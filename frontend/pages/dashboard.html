@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - To-Do List</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>Tarefas de: <span id="user"></span></h1>
+    <button id="logout-btn">Sair</button>
+  </header>
+
+  <main>
+    <section class="add-task">
+      <input type="text" id="new-task" placeholder="Nova tarefa">
+      <button id="add-task-btn">Adicionar</button>
+    </section>
+
+
+    <ul id="task-list">
+    </ul>
+  </main>
+
+
+
+  <div id="edit-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Editar Tarefa</h2>
+      <input type="text" id="edit-task-input" />
+      <div class="modal-actions">
+        <button id="save-edit-btn">Salvar</button>
+        <button id="cancel-edit-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  <script src="../js/authGuard.js"></script>
+  <script src="../js/dashboard.js"></script>
+  
+</body>
+</html>
