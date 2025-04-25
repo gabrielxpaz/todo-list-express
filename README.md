@@ -40,7 +40,7 @@ cd todo-list-express
 
 npm install dotenv express nodemon mysql2 bcryptjs cors
 
-3. Configure o ambiente (crie um arquivo .env baseado no .env original):
+3. Configure o ambiente (crie um arquivo .env baseado no .env-example):
 
 [Edite o arquivo .env com suas configurações]
 
