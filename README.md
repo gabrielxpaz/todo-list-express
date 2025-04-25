@@ -70,4 +70,4 @@ npm start
 5. Abra um Pull Request
 
 ## 📄 Licença
-ISC
+MIT
