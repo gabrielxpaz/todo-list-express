@@ -109,6 +109,7 @@ addTaskButton.addEventListener("click", async (e) => {
     `;
     document.querySelector("#task-list").appendChild(taskItem);
     addDeleteListener(taskItem);
+    addEditListener(taskItem);
     addCompleteListener(taskItem);
 });
 
